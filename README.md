@@ -4,12 +4,16 @@ This project explores the application of transfer learning for the detection of 
 
 ## Table of Contents
 
-- [Problem Statement](#problem-statement)
-- [Dataset](#dataset)
-- 
+- [Problem Statement and Dataset](#problem-statement-and-dataset)
+- [Pre-trained Models and Justification](#pre-trained-models-and-justification)
+- [Fine-tuning Process and Rationale](#fine-tuning-process-and-rationale)
+- [Evaluation Metrics](#evaluation-metrics)
+- [Results](#results)
+- [Discussion of Findings](#results)
+- [Conclusion](#conclusion)
 
 
-## Repository Structure:
+## Repository Structure
 transfer_learning_glaucoma/
 │
 ├── README.md
@@ -112,6 +116,3 @@ This project aimed to leverage transfer learning for the development of a glauco
 The findings suggest that further research is needed to develop more effective glaucoma detection models. This could involve exploring alternative pre-trained models better suited for medical imaging, designing custom architectures, and implementing more specialized preprocessing techniques in consultation with ophthalmologists. Additionally, a larger and more diverse dataset would likely be beneficial to improve the models' ability to learn relevant features. 
 
 While this project did not achieve high accuracy, it served as a valuable learning experience, demonstrating the importance of careful consideration of dataset characteristics, domain-specific preprocessing, and the potential limitations of transfer learning when applied to specialized medical imaging problems.
-
-
-
