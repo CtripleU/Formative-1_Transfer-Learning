@@ -2,6 +2,21 @@
 
 This project explores the application of transfer learning for the detection of glaucoma.
 
+## Table of Contents
+
+- [Problem Statement](#problem-statement)
+- [Dataset](#dataset)
+- 
+
+
+## Repository Structure:
+transfer_learning_glaucoma/
+│
+├── README.md
+│
+├── Transfer_Learning_Glaucoma.ipynb
+
+
 ## Problem Statement and Dataset
 
 **Problem Statement:**  The objective is to develop an accurate image-based classifier that can distinguish between images of eyes with glaucoma and healthy eyes. Early detection of glaucoma is crucial for preventing vision loss, making this a valuable tool in ophthalmology.
@@ -60,9 +75,9 @@ The performance of the three fine-tuned models on the glaucoma detection task is
 
 | Model    | Accuracy | Loss | Precision | Recall | F1 score |
 | -------- | -------- | -------- | -------- | -------- | -------- |
-| VGG16      | [Value]  | [Value] | [Value]  | [Value] | [Value]  |
-| ResNet50     | [Value]  | [Value] | [Value]  | [Value] | [Value]  |
-| InceptionV3 | [Value]  | [Value] | [Value]  | [Value] | [Value]  |
+| VGG16      | 0.6609  | 0.7347 | 0.6766  | 0.9576 | 0.7930  |
+| ResNet50     | 0.6782  | 0.6837 | 0.6782  | 1.0000 | 0.8.82  |
+| InceptionV3 | 0.4425 | 2.4639 | 0.6235  | 0.4492 | 0.5222  |
 
 
 ## Discussion of Findings
@@ -90,13 +105,13 @@ The results presented in the table reveal that the fine-tuned models achieved re
 The relatively poor performance highlights the complexities of applying transfer learning to specialized medical imaging tasks.  Further research and experimentation are necessary to develop more accurate and reliable glaucoma detection models using deep learning. 
 
 
-Conclusion
-This project aims to demonstrate the effectiveness of transfer learning for the task of glaucoma detection. By comparing the performance of three different pre-trained models, valuable insights can be gained into the strengths and limitations of each architecture for this specific medical imaging problem. The results will inform the development of more robust and reliable AI-powered diagnostic tools for ophthalmology.
-Repository Structure:
-transfer_learning_glaucoma/
-│
-├── README.md
-│
-├── Transfer_Learning_Glaucoma.ipynb
+## Conclusion
+
+This project aimed to leverage transfer learning for the development of a glaucoma detection model. However, the results indicate that directly applying pre-trained models like VGG16, ResNet50, and InceptionV3, even with fine-tuning, did not achieve satisfactory accuracy for this task. The relatively low performance highlights the challenges of transferring knowledge from natural image datasets to the specialized domain of ophthalmological images. 
+
+The findings suggest that further research is needed to develop more effective glaucoma detection models. This could involve exploring alternative pre-trained models better suited for medical imaging, designing custom architectures, and implementing more specialized preprocessing techniques in consultation with ophthalmologists. Additionally, a larger and more diverse dataset would likely be beneficial to improve the models' ability to learn relevant features. 
+
+While this project did not achieve high accuracy, it served as a valuable learning experience, demonstrating the importance of careful consideration of dataset characteristics, domain-specific preprocessing, and the potential limitations of transfer learning when applied to specialized medical imaging problems.
+
 
 
